@@ -2,7 +2,7 @@ body{
 	direction: __MSG_@@bidi_dir__;
 	font: menu;
 	color: #000;
-	background-color: #fff;
+	background-color: #eee;
 	margin: 0;
 	padding: 0;
 	cursor: default;
@@ -11,6 +11,7 @@ body{
 	overflow: hidden;
 	width: 320px;
 	height: 530px;
+	max-height: 530px; /* prevent double scrollbars in popup */
 }
 body.linux{
 	font-size: 12px;
@@ -74,8 +75,6 @@ body.linux input{
 }
 #results,
 #tree{
-	background-color: #eee;
-	overflow: auto;
 	outline: 0;
 	padding: 3px 0;
 	-webkit-box-shadow: inset 0 4px 4px -4px rgba(0,0,0,.1);
@@ -83,6 +82,7 @@ body.linux input{
 	box-flex: 1;
 	text-shadow: 0 1px #f6f6f6;
 	position: relative;
+    overflow-y: auto;
 }
 #results ul,
 #results ul li,
@@ -388,3 +388,15 @@ menu[type=context].hide-editables #folder-delete{
 	top: 0;
 	opacity: 1;
 }
+
+/* current Gmail-style scrollbar */
+/*::-webkit-scrollbar {
+	width: 9px;
+	background: #eee; /* same color as the background */
+/*}
+::-webkit-scrollbar-thumb {
+	background-color: rgba(0,0,0,0.2);
+	border-top: 1px solid rgba(0,0,0,0.1);
+	border-bottom: 1px solid rgba(0,0,0,0.07);
+	border-left: 1px solid rgba(0,0,0,0.1);
+}*/

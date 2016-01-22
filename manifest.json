@@ -1,6 +1,6 @@
 {
 	"name": "__MSG_extName__",
-	"version": "0.9",
+	"version": "0.9.7.1",
 	"manifest_version": 2,
 	"description": "__MSG_extDesc__",
 	"icons": {
@@ -10,13 +10,11 @@
 	},
 	"browser_action": {
 		"default_icon": "icon.png",
-		"popup": "popup.html"
+		"default_popup": "popup.html"
 	},
 	"options_page": "options.html",
 	"background": {
-		"scripts": [
-			"background.js"
-		]
+		"scripts": ["background.js"]
 	},
 	"permissions": [
 		"<all_urls>",
@@ -24,11 +22,9 @@
 		"bookmarks",
 		"tabs"
 	],
-	"content_security_policy": "script-src 'self'; 'https://query.yahooapis.com';unsafe-inline; object-src 'self'",
 	"minimum_chrome_version": "9",
 	"default_locale": "en",
 	"omnibox": {
-		"keyword": "*"
+		"keyword" : "*"
 	}
 }
-
