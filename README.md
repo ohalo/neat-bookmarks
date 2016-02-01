@@ -50,7 +50,7 @@ Neater Bookmarks was powered by [MooTools](http://mootools.net/), but is now pow
 
 Neater Bookmarks 是一个很好用的书签，我很喜欢，但是里面存在一些问题，我需要修改一下：
 
-1.搜索时如果搜索到文件夹，会报错
-2.在列表显示是空的时候，点击enter键会报错
+	1. 搜索时如果搜索到文件夹，会报错
+	2. 在列表显示是空的时候，点击enter键会报错
 
 我在这个版本里面已经修复这两个问题

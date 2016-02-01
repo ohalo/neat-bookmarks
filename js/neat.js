@@ -101,7 +101,6 @@ function init() {
 	};
 
 	var generateBookmarkHTML = function(title, url, extras) {
-		//TODO
 		if (!extras) extras = '';
 		var u = url.htmlspecialchars();
 		var favicon = 'chrome://favicon/' + u;
