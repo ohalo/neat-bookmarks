@@ -108,7 +108,7 @@ function init() {
 		var tooltipURL = url;
 		if (/^javascript:/i.test(url)) {
 			if (url.length > 140) tooltipURL = url.slice(0, 140) + '...';
-			favicon = 'document-code.png';
+			favicon = 'images/document-code.png';
 		}
 		tooltipURL = tooltipURL.htmlspecialchars();
 		var name = title.htmlspecialchars() || (httpsPattern.test(url) ? url.replace(httpsPattern, '') : _m('noTitle'));
@@ -137,7 +137,7 @@ function init() {
 					isOpen = opens.contains(id);
 					if (isOpen) open = ' open';
 				}
-				html += '<li class="parent' + open + '"' + idHTML + ' role="treeitem" aria-expanded="' + isOpen + '" data-parentid="' + parentID + '">' + '<span tabindex="0" style="-webkit-padding-start: ' + paddingStart + 'px"><b class="twisty"></b>' + '<img src="folder.png" width="16" height="16" alt=""><i>' + (title || _m('noTitle')) + '</i>' + '</span>';
+				html += '<li class="parent' + open + '"' + idHTML + ' role="treeitem" aria-expanded="' + isOpen + '" data-parentid="' + parentID + '">' + '<span tabindex="0" style="-webkit-padding-start: ' + paddingStart + 'px"><b class="twisty"></b>' + '<img src="images/folder.png" width="16" height="16" alt=""><i>' + (title || _m('noTitle')) + '</i>' + '</span>';
 				if (isOpen) {
 					if (children) {
 						html += generateHTML(children, level + 1);
