@@ -24,13 +24,13 @@ function init() {
 	$('customStyles').innerHTML = chrome.i18n.getMessage('customStyles');
 	var linkGithubGist = '<a href="http://gist.github.com/">GitHub Gist</a>';
 	$('customStylesText').innerHTML = chrome.i18n.getMessage('customStylesText', [linkGithubGist]);
-	var neaterEmail = '<a href="mailto:neaterbookmarks@gmail.com?body=%0d%0dSent from Neater Bookmarks Options page">neaterbookmarks@gmail.com</a>';
+	var neaterEmail = '<a href="mailto:halo26812@yeah.net?body=%0d%0dSent from Neater Bookmarks Options page">halo26812@yeah.net</a>';
 	$('optionsFooterText1').innerHTML = chrome.i18n.getMessage('optionsFooterText1', [neaterEmail]);
-	var neaterGithub = 'GitHub: <a href="http://goo.gl/s2kVi">http://goo.gl/s2kVi</a>';
+	var neaterGithub = 'GitHub: <a href="https://github.com/ohalo/neat-bookmarks">https://github.com/ohalo/neat-bookmarks</a>';
 	$('optionsFooterText2').innerHTML = chrome.i18n.getMessage('optionsFooterText2', [extName, neaterGithub]);
 	var neaterFaq = '<a href="http://goo.gl/DDMqE">http://goo.gl/DDMqE</a>';
 	$('optionsFooterText3').innerHTML = chrome.i18n.getMessage('optionsFooterText3', [neaterFaq]);
-	var neaterIssues = '<a href="http://goo.gl/Ct39y">http://goo.gl/Ct39y</a>';
+	var neaterIssues = '<a href="https://github.com/ohalo/neat-bookmarks/issues">https://github.com/ohalo/neat-bookmarks/issues</a>';
 	$('optionsFooterText4').innerHTML = chrome.i18n.getMessage('optionsFooterText4', [neaterIssues]);
 	var neaterIcons = '<a href="http://goo.gl/0xQNp">http://goo.gl/0xQNp</a>';
 	$('optionsFooterText5').innerHTML = chrome.i18n.getMessage('optionsFooterText5', [neaterIcons]);
